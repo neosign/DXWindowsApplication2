@@ -1,0 +1,1917 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A3CE76F-3746-4784-9E14-438212BBDFD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXWindowsApplication2</RootNamespace>
+    <AssemblyName>e-SmartBilling</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>5BCEAD36AF78B986F49307618293A9D285DAFAE4</ManifestCertificateThumbprint>
+    <ManifestKeyFile>RoomReserved.cs_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <StartupObject>
+    </StartupObject>
+    <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>sx-icon.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>SXBILLING</ProductName>
+    <PublisherName>Meath</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>34</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataLayer\bin\Debug\DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DemoData.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Tutorials.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v10.2.UI, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v10.2.Win, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v10.2.Extensions, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adcHelper.cs" />
+    <Compile Include="BusinessLogicBridge.cs" />
+    <Compile Include="HelperEncrypt.cs" />
+    <Compile Include="languages.cs" />
+    <Compile Include="LastNameGenerator.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\booking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\bookrefund.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\bookrefund.Designer.cs">
+      <DependentUpon>bookrefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\contract.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\contract.Designer.cs">
+      <DependentUpon>contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\contract_preview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\contract_preview.Designer.cs">
+      <DependentUpon>contract_preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\contract_backup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\contract_backup.Designer.cs">
+      <DependentUpon>contract_backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_booking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_booking.Designer.cs">
+      <DependentUpon>reciept_tax_booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_checkin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_checkin.Designer.cs">
+      <DependentUpon>reciept_tax_checkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_manual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax_manual.Designer.cs">
+      <DependentUpon>reciept_tax_manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_manual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_manual.Designer.cs">
+      <DependentUpon>reciept_manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_checkin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_checkin.Designer.cs">
+      <DependentUpon>reciept_checkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_booking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_booking.Designer.cs">
+      <DependentUpon>reciept_booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_preview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_preview.Designer.cs">
+      <DependentUpon>reciept_preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\invoice_preview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\invoice_preview.Designer.cs">
+      <DependentUpon>invoice_preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\history_log.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\history_log.Designer.cs">
+      <DependentUpon>history_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept_tax.Designer.cs">
+      <DependentUpon>reciept_tax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\reciept.Designer.cs">
+      <DependentUpon>reciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\invoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\invoice.Designer.cs">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocuments\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDocuments\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneDetail.Designer.cs">
+      <DependentUpon>phoneDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\waterHourUnit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\waterHourUnit.Designer.cs">
+      <DependentUpon>waterHourUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneCharge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneCharge.Designer.cs">
+      <DependentUpon>phoneCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneConsumation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\phoneConsumation.Designer.cs">
+      <DependentUpon>phoneConsumation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\waterMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\waterMonth.Designer.cs">
+      <DependentUpon>waterMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\waterDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\waterDay.Designer.cs">
+      <DependentUpon>waterDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\waterHourSX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\waterHourSX.Designer.cs">
+      <DependentUpon>waterHourSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\waterAccumulate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\waterAccumulate.Designer.cs">
+      <DependentUpon>waterAccumulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourUnit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourUnit.Designer.cs">
+      <DependentUpon>electricHourUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourMX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourMX.Designer.cs">
+      <DependentUpon>electricHourMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourSX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricHourSX.Designer.cs">
+      <DependentUpon>electricHourSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricMonth.Designer.cs">
+      <DependentUpon>electricMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricAccumulate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricAccumulate.Designer.cs">
+      <DependentUpon>electricAccumulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\electricDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\electricDay.Designer.cs">
+      <DependentUpon>electricDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_cancelbooking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_cancelbooking.Designer.cs">
+      <DependentUpon>tenant_cancelbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_informleave.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_informleave.Designer.cs">
+      <DependentUpon>tenant_informleave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_reserved.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant_reserved.Designer.cs">
+      <DependentUpon>tenant_reserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\tenant.Designer.cs">
+      <DependentUpon>tenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\room.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\room.Designer.cs">
+      <DependentUpon>room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDocuments\income.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocuments\income.Designer.cs">
+      <DependentUpon>income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomList.cs" />
+    <Compile Include="splashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashForm.designer.cs">
+      <DependentUpon>splashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sxbillingDataSetNontakorn.cs">
+      <DependentUpon>sxbillingDataSetNontakorn.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sxbillingDataSetNontakorn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sxbillingDataSetNontakorn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant.cs" />
+    <Compile Include="TenantStatus.cs" />
+    <Compile Include="UserForms\AddtionalItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\AddtionalItem.designer.cs">
+      <DependentUpon>AddtionalItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportWaterConsummation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportWaterConsummation.Designer.cs">
+      <DependentUpon>ReportWaterConsummation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopUpRoomItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopUpRoomItem.designer.cs">
+      <DependentUpon>PopUpRoomItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopUpRecieptItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopUpRecieptItem.designer.cs">
+      <DependentUpon>PopUpRecieptItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportPhoneConsummation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportPhoneConsummation.Designer.cs">
+      <DependentUpon>ReportPhoneConsummation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupSelectADC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupSelectADC.designer.cs">
+      <DependentUpon>PopupSelectADC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportRoom.Designer.cs">
+      <DependentUpon>ReportRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportTenant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportTenant.Designer.cs">
+      <DependentUpon>ReportTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportElectricConsummation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportElectricConsummation.Designer.cs">
+      <DependentUpon>ReportElectricConsummation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportIncome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportIncome.Designer.cs">
+      <DependentUpon>ReportIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupAbout.designer.cs">
+      <DependentUpon>PopupAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopUpInvoiceItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopUpInvoiceItem.designer.cs">
+      <DependentUpon>PopUpInvoiceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopUpCheckOutItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopUpCheckOutItem.designer.cs">
+      <DependentUpon>PopUpCheckOutItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupRegistered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupRegistered.designer.cs">
+      <DependentUpon>PopupRegistered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupRegistration.designer.cs">
+      <DependentUpon>PopupRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Recording_PMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\Recording_PMeter.Designer.cs">
+      <DependentUpon>Recording_PMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Recording_WMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\Recording_WMeter.Designer.cs">
+      <DependentUpon>Recording_WMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RefundInsurance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RefundInsurance.Designer.cs">
+      <DependentUpon>RefundInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BackupDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BackupDatabase.Designer.cs">
+      <DependentUpon>BackupDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BackupOffline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BackupOffline.Designer.cs">
+      <DependentUpon>BackupOffline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BackupOnline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BackupOnline.Designer.cs">
+      <DependentUpon>BackupOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoAdditionItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoAdditionItem.designer.cs">
+      <DependentUpon>BasicInfoAdditionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoApartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoApartment.designer.cs">
+      <DependentUpon>BasicInfoApartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoBuilding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoBuilding.designer.cs">
+      <DependentUpon>BasicInfoBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoCompany.designer.cs">
+      <DependentUpon>BasicInfoCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoDocument.designer.cs">
+      <DependentUpon>BasicInfoDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeterAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeterAdd.Designer.cs">
+      <DependentUpon>BasicInfoElectricMeterAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeterUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeterUpdate.Designer.cs">
+      <DependentUpon>BasicInfoElectricMeterUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoFloor.designer.cs">
+      <DependentUpon>BasicInfoFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoRoom.designer.cs">
+      <DependentUpon>BasicInfoRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoRoomType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoRoomType.designer.cs">
+      <DependentUpon>BasicInfoRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephoneAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephoneAdd.Designer.cs">
+      <DependentUpon>BasicInfoTelephoneAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephoneUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephoneUpdate.Designer.cs">
+      <DependentUpon>BasicInfoTelephoneUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWaterMeterAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWaterMeterAdd.Designer.cs">
+      <DependentUpon>BasicInfoWaterMeterAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWaterMeterUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWaterMeterUpdate.Designer.cs">
+      <DependentUpon>BasicInfoWaterMeterUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BookRefund.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BookRefund.Designer.cs">
+      <DependentUpon>BookRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DevicePMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\DevicePMeter.Designer.cs">
+      <DependentUpon>DevicePMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DeviceADC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\DeviceADC.Designer.cs">
+      <DependentUpon>DeviceADC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DeviceEMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\DeviceEMeter.Designer.cs">
+      <DependentUpon>DeviceEMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DeviceWMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\DeviceWMeter.Designer.cs">
+      <DependentUpon>DeviceWMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\InvoiceAddItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\InvoiceAddItem.Designer.cs">
+      <DependentUpon>InvoiceAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\IssueInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\IssueInvoice.Designer.cs">
+      <DependentUpon>IssueInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ListContract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ListContract.Designer.cs">
+      <DependentUpon>ListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ListReceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ListReceipt.Designer.cs">
+      <DependentUpon>ListReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupAddTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupAddTenant.designer.cs">
+      <DependentUpon>PopupAddTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopUpAddtionalItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopUpAddtionalItem.designer.cs">
+      <DependentUpon>PopUpAddtionalItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupBrowseESerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupBrowseESerial.Designer.cs">
+      <DependentUpon>PopupBrowseESerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupChangePassword.designer.cs">
+      <DependentUpon>PopupChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupElectricPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupElectricPassword.designer.cs">
+      <DependentUpon>PopupElectricPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupProgressBar.Designer.cs">
+      <DependentUpon>PopupProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupSelectTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupSelectTenant.designer.cs">
+      <DependentUpon>PopupSelectTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupWarning.designer.cs">
+      <DependentUpon>PopupWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PopupWarningSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PopupWarningSetting.designer.cs">
+      <DependentUpon>PopupWarningSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramAbout.Designer.cs">
+      <DependentUpon>ProgramAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramDatabase.Designer.cs">
+      <DependentUpon>ProgramDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramGeneral.Designer.cs">
+      <DependentUpon>ProgramGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramHelp.Designer.cs">
+      <DependentUpon>ProgramHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramLanguage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramLanguage.Designer.cs">
+      <DependentUpon>ProgramLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramLicense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramLicense.Designer.cs">
+      <DependentUpon>ProgramLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramLogAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramLogAccess.Designer.cs">
+      <DependentUpon>ProgramLogAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramPermission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramPermission.designer.cs">
+      <DependentUpon>ProgramPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProgramUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProgramUser.Designer.cs">
+      <DependentUpon>ProgramUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoElectricMeter.Designer.cs">
+      <DependentUpon>BasicInfoElectricMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoTelephone.Designer.cs">
+      <DependentUpon>BasicInfoTelephone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoWater.Designer.cs">
+      <DependentUpon>BasicInfoWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoZone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\BasicInfoZone.designer.cs">
+      <DependentUpon>BasicInfoZone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Recording_EMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\Recording_EMeter.Designer.cs">
+      <DependentUpon>Recording_EMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ReportRevenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ReportRevenue.Designer.cs">
+      <DependentUpon>ReportRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckin.designer.cs">
+      <DependentUpon>RoomCheckin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckOut.designer.cs">
+      <DependentUpon>RoomCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckOutAddItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomCheckOutAddItem.designer.cs">
+      <DependentUpon>RoomCheckOutAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomFix.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomFix.Designer.cs">
+      <DependentUpon>RoomFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomInformleave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomInformleave.designer.cs">
+      <DependentUpon>RoomInformleave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomItem.Designer.cs">
+      <DependentUpon>RoomItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomItemButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomItemButton.Designer.cs">
+      <DependentUpon>RoomItemButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomItemRev2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomItemRev2.Designer.cs">
+      <DependentUpon>RoomItemRev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomLight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomLight.Designer.cs">
+      <DependentUpon>RoomLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomList.designer.cs">
+      <DependentUpon>RoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomPopupDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomPopupDetail.Designer.cs">
+      <DependentUpon>RoomPopupDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomReserved.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomReserved.designer.cs">
+      <DependentUpon>RoomReserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomSmall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomSmall.Designer.cs">
+      <DependentUpon>RoomSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RoomTypeAdditionItemAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RoomTypeAdditionItemAdd.Designer.cs">
+      <DependentUpon>RoomTypeAdditionItemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Tenant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\Tenant.designer.cs">
+      <DependentUpon>Tenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\TestControl.Designer.cs">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\uBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\uFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ViewDataThroughInternet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ViewDataThroughInternet.Designer.cs">
+      <DependentUpon>ViewDataThroughInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ViewInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ViewInvoice.Designer.cs">
+      <DependentUpon>ViewInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\winUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\winUC.Designer.cs">
+      <DependentUpon>winUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\bookrefund.resx">
+      <DependentUpon>bookrefund.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\contract.resx">
+      <DependentUpon>contract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\contract_preview.resx">
+      <DependentUpon>contract_preview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\contract_backup.resx">
+      <DependentUpon>contract_backup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_tax_booking.resx">
+      <DependentUpon>reciept_tax_booking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_tax_checkin.resx">
+      <DependentUpon>reciept_tax_checkin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_tax_manual.resx">
+      <DependentUpon>reciept_tax_manual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_manual.resx">
+      <DependentUpon>reciept_manual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_checkin.resx">
+      <DependentUpon>reciept_checkin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_booking.resx">
+      <DependentUpon>reciept_booking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_preview.resx">
+      <DependentUpon>reciept_preview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\invoice_preview.resx">
+      <DependentUpon>invoice_preview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\history_log.resx">
+      <DependentUpon>history_log.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept_tax.resx">
+      <DependentUpon>reciept_tax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\reciept.resx">
+      <DependentUpon>reciept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocuments\invoice.resx">
+      <DependentUpon>invoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\phoneDetail.resx">
+      <DependentUpon>phoneDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\waterHourUnit.resx">
+      <DependentUpon>waterHourUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\phoneCharge.resx">
+      <DependentUpon>phoneCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\phoneConsumation.resx">
+      <DependentUpon>phoneConsumation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\waterMonth.resx">
+      <DependentUpon>waterMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\waterDay.resx">
+      <DependentUpon>waterDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\waterHourSX.resx">
+      <DependentUpon>waterHourSX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\waterAccumulate.resx">
+      <DependentUpon>waterAccumulate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricHourUnit.resx">
+      <DependentUpon>electricHourUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricHourMX.resx">
+      <DependentUpon>electricHourMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricHourSX.resx">
+      <DependentUpon>electricHourSX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricMonth.resx">
+      <DependentUpon>electricMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricAccumulate.resx">
+      <DependentUpon>electricAccumulate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\electricDay.resx">
+      <DependentUpon>electricDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\tenant_cancelbooking.resx">
+      <DependentUpon>tenant_cancelbooking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\tenant_informleave.resx">
+      <DependentUpon>tenant_informleave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\tenant_reserved.resx">
+      <DependentUpon>tenant_reserved.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\tenant.resx">
+      <DependentUpon>tenant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\room.resx">
+      <DependentUpon>room.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocuments\income.resx">
+      <DependentUpon>income.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashForm.resx">
+      <DependentUpon>splashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\AddtionalItem.resx">
+      <DependentUpon>AddtionalItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportWaterConsummation.resx">
+      <DependentUpon>ReportWaterConsummation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopUpRoomItem.resx">
+      <DependentUpon>PopUpRoomItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopUpRecieptItem.resx">
+      <DependentUpon>PopUpRecieptItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportPhoneConsummation.resx">
+      <DependentUpon>ReportPhoneConsummation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupSelectADC.resx">
+      <DependentUpon>PopupSelectADC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportRoom.resx">
+      <DependentUpon>ReportRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportTenant.resx">
+      <DependentUpon>ReportTenant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportElectricConsummation.resx">
+      <DependentUpon>ReportElectricConsummation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportIncome.resx">
+      <DependentUpon>ReportIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupAbout.resx">
+      <DependentUpon>PopupAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopUpInvoiceItem.resx">
+      <DependentUpon>PopUpInvoiceItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopUpCheckOutItem.resx">
+      <DependentUpon>PopUpCheckOutItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupRegistered.resx">
+      <DependentUpon>PopupRegistered.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupRegistration.resx">
+      <DependentUpon>PopupRegistration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Recording_PMeter.resx">
+      <DependentUpon>Recording_PMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Recording_WMeter.resx">
+      <DependentUpon>Recording_WMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RefundInsurance.resx">
+      <DependentUpon>RefundInsurance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BackupDatabase.resx">
+      <DependentUpon>BackupDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BackupOffline.resx">
+      <DependentUpon>BackupOffline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BackupOnline.resx">
+      <DependentUpon>BackupOnline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoAdditionItem.resx">
+      <DependentUpon>BasicInfoAdditionItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoApartment.resx">
+      <DependentUpon>BasicInfoApartment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoBuilding.resx">
+      <DependentUpon>BasicInfoBuilding.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoCompany.resx">
+      <DependentUpon>BasicInfoCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoDocument.resx">
+      <DependentUpon>BasicInfoDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoElectricMeterAdd.resx">
+      <DependentUpon>BasicInfoElectricMeterAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoElectricMeterUpdate.resx">
+      <DependentUpon>BasicInfoElectricMeterUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoFloor.resx">
+      <DependentUpon>BasicInfoFloor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoRoom.resx">
+      <DependentUpon>BasicInfoRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoRoomType.resx">
+      <DependentUpon>BasicInfoRoomType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoTelephoneAdd.resx">
+      <DependentUpon>BasicInfoTelephoneAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoTelephoneUpdate.resx">
+      <DependentUpon>BasicInfoTelephoneUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoWaterMeterAdd.resx">
+      <DependentUpon>BasicInfoWaterMeterAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoWaterMeterUpdate.resx">
+      <DependentUpon>BasicInfoWaterMeterUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BookRefund.resx">
+      <DependentUpon>BookRefund.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DevicePMeter.resx">
+      <DependentUpon>DevicePMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DeviceADC.resx">
+      <DependentUpon>DeviceADC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DeviceEMeter.resx">
+      <DependentUpon>DeviceEMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DeviceWMeter.resx">
+      <DependentUpon>DeviceWMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\InvoiceAddItem.resx">
+      <DependentUpon>InvoiceAddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\IssueInvoice.resx">
+      <DependentUpon>IssueInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ListContract.resx">
+      <DependentUpon>ListContract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ListReceipt.resx">
+      <DependentUpon>ListReceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupAddTenant.resx">
+      <DependentUpon>PopupAddTenant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopUpAddtionalItem.resx">
+      <DependentUpon>PopUpAddtionalItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupBrowseESerial.resx">
+      <DependentUpon>PopupBrowseESerial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupChangePassword.resx">
+      <DependentUpon>PopupChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupElectricPassword.resx">
+      <DependentUpon>PopupElectricPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupProgressBar.resx">
+      <DependentUpon>PopupProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupSelectTenant.resx">
+      <DependentUpon>PopupSelectTenant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupWarning.resx">
+      <DependentUpon>PopupWarning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PopupWarningSetting.resx">
+      <DependentUpon>PopupWarningSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramAbout.resx">
+      <DependentUpon>ProgramAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramDatabase.resx">
+      <DependentUpon>ProgramDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramGeneral.resx">
+      <DependentUpon>ProgramGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramHelp.resx">
+      <DependentUpon>ProgramHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramLanguage.resx">
+      <DependentUpon>ProgramLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramLicense.resx">
+      <DependentUpon>ProgramLicense.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramLogAccess.resx">
+      <DependentUpon>ProgramLogAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramPermission.resx">
+      <DependentUpon>ProgramPermission.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProgramUser.resx">
+      <DependentUpon>ProgramUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoElectricMeter.resx">
+      <DependentUpon>BasicInfoElectricMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoTelephone.resx">
+      <DependentUpon>BasicInfoTelephone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoWater.resx">
+      <DependentUpon>BasicInfoWater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BasicInfoZone.resx">
+      <DependentUpon>BasicInfoZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Recording_EMeter.resx">
+      <DependentUpon>Recording_EMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ReportRevenue.resx">
+      <DependentUpon>ReportRevenue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomCheckin.resx">
+      <DependentUpon>RoomCheckin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomCheckOut.resx">
+      <DependentUpon>RoomCheckOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomCheckOutAddItem.resx">
+      <DependentUpon>RoomCheckOutAddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomFix.resx">
+      <DependentUpon>RoomFix.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomInformleave.resx">
+      <DependentUpon>RoomInformleave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomItem.resx">
+      <DependentUpon>RoomItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomItemButton.resx">
+      <DependentUpon>RoomItemButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomItemRev2.resx">
+      <DependentUpon>RoomItemRev2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomLight.resx">
+      <DependentUpon>RoomLight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomList.resx">
+      <DependentUpon>RoomList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomPopupDetail.resx">
+      <DependentUpon>RoomPopupDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomReserved.resx">
+      <DependentUpon>RoomReserved.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomSmall.resx">
+      <DependentUpon>RoomSmall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RoomTypeAdditionItemAdd.resx">
+      <DependentUpon>RoomTypeAdditionItemAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Tenant.resx">
+      <DependentUpon>Tenant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\TestControl.resx">
+      <DependentUpon>TestControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ViewDataThroughInternet.resx">
+      <DependentUpon>ViewDataThroughInternet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ViewInvoice.resx">
+      <DependentUpon>ViewInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\winUC.resx">
+      <DependentUpon>winUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.3.0">
+      <Visible>False</Visible>
+      <ProductName>Visual Studio Tools for the Office system 3.0 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\DataLayer.BusinessLogic.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Bandwidth.png" />
+    <None Include="SQLUndoScripts\SQLScripts\sxbillingCache.dbo.district.sql" />
+    <None Include="SQLUndoScripts\SQLScripts\sxbillingCache.dbo.province.sql" />
+    <None Include="SQLUndoScripts\SQLScripts\sxbillingCache.sxbilling.sql" />
+    <None Include="SQLUndoScripts\sxbillingCache.dbo.district.disable.sql" />
+    <None Include="SQLUndoScripts\sxbillingCache.dbo.province.disable.sql" />
+    <None Include="SQLUndoScripts\sxbillingCache.sxbilling.disable.sql" />
+    <None Include="sxbillingDataSetNontakorn.xsc">
+      <DependentUpon>sxbillingDataSetNontakorn.xsd</DependentUpon>
+    </None>
+    <None Include="sxbillingDataSetNontakorn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sxbillingDataSetNontakorn.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sxbillingDataSetNontakorn.xss">
+      <DependentUpon>sxbillingDataSetNontakorn.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Images\Ribbon_Exit_32x32.png" />
+    <None Include="Properties\DataSources\DXWindowsApplication2.PrintDocuments.Data.datasource" />
+    <None Include="Properties\DataSources\DXWindowsApplication2.ReportDocuments.electricDay.datasource" />
+    <None Include="Resources\a.pdf" />
+    <None Include="Resources\Booking-template.doc" />
+    <None Include="Resources\Booking.doc" />
+    <None Include="Resources\Contract-template.doc" />
+    <None Include="Resources\Contract.doc" />
+    <None Include="Resources\lang.xls" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\savedisk.png" />
+    <None Include="Resources\preview.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\User32x32.png" />
+    <None Include="Resources\ribbonControlSX.ApplicationIcon.png" />
+    <None Include="Resources\no-image.jpg" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\splashscreen.png" />
+    <None Include="Resources\Contract.png" />
+    <None Include="RoomReserved.cs_1_TemporaryKey.pfx" />
+    <None Include="RoomReserved.cs_TemporaryKey.pfx" />
+    <Content Include="Resources\adc_howto.png" />
+    <Content Include="sx-icon.ico" />
+    <Content Include="sxbilling.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DataLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DataLayer.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Charts.v10.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeParser.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DemoData.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v10.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v10.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Tutorials.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v10.2.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v10.2.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGauges.v10.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGauges.v10.2.Win">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v10.2.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DXWindowsApplication2.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="sx-icon.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sxbilling.sdf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADC.Jetbox.Lib\ADC.Jetbox.Lib.csproj">
+      <Project>{7FD67E97-2973-4581-9719-4EC0DC84AF83}</Project>
+      <Name>ADC.Jetbox.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

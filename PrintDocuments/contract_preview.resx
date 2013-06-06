@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Detail.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="xrLabelTopic3.Text" xml:space="preserve">
+    <value>
+ข้อที่3. 	ผู้เช่าได้วางเงินประกันความเสียหายจำนวน ุ6,000.00 บาท ( หกพันบาทถ้วน ) แก่ผู้ให้เช่า และผู้ให้เช่าได้รับเงินจำนวนนี้ไว้เรียบร้อยแล้ว และสัญญาว่าจะคืนเงินจำนวนนี้ให้แก่ผู้เช่าทันทีเมื่อเลิกสัญญาแล้ว 30 วัน หลังตรวจเช็คสภาพของห้อง
+
+ข้อที่4.  ผู้ให้เช่าสัญญาว่า
+	4.1 เมื่อผู้เช่าได้ชำระค่าเช่า และปฏิบัติตามพันธะของตนตามสัญญานี้ ผู้เช่าก็จะมีสิทธิครอบครองสถานที่ และเครื่องใช้ประจำห้องพักได้โดยสันติสุขตลอดระยะเวลาแห่งสัญญานี้
+	4.2 จะชำระภาษีอากรและการประเมินเรียกเก็บของทางการทั้งปวงอันเกี่ยวกับสถานที่และเครื่องใช้ ประจำห้องพัก หากผู้เช่าต้องชำระแทนผู้ให้เช่าจะต้องชดใช้ทันทีเมื่อถูกทวงถาม
+	4.3 ยินยอมให้ผู้เช่าหักภาษี ณ ที่จ่ายจากค่าเช่าซึ่งผู้เช่าต้องชำระให้แก่ผู้ให้เช่าตามอัตราและวิธีการที่กฎหมายกำหนด
+	4.4 จะทำการซ่อมแซมสถานที่ และเครื่องใช้ประจำห้องพักให้อยู่ในสภาพใช้การได้อย่างเหมาะสม รวมทั้งการซ่อมแซมหลังคา เพดาน พื้น ทางระบายน้ำ ระบบไฟฟ้า ประปา เป็นต้น
+	4.5 หากว่าขณะหนึ่งขณะใดระหว่างสัญญานี้ผู้เช่าจำเป็นต้องเลิกเช่าสถานที่และเครื่องใช้ประจำห้องพัก ผู้เช่าจะแจ้งบอกล่วงหน้าไม่น้อยกว่า 30 วัน
+
+ข้อที่ 5. 	เป็นที่ตกลงกันว่าเมื่อครบกำหนดอายุสัญญาเช่าฉบับนี้ หากผู้เช่ามีความประสงค์จะเช่าสถานที่และเครื่องใช้ประจำห้องพักต่อไปอีก ผู้เช่าตกลงจะให้ผู้เช่าได้เช่าตามระยะเวลาและเงื่อนไขตามสัญญาที่ระบุไว้ในสัญญานี้ทุกข้อทุกประการ
+
+ข้อที่6.  สัญญานี้ให้เป็นที่ผูกพันในทุกทางทุกประการแก่ผู้รับมรดก และผู้จัดการมรดกและผู้รับช่วงสิทธิของผู้ให้เช่า และแก่ผู้สืบเนื่องหรือผู้รับช่วงสิทธิของผู้เช่าด้วย
+ระเบียบข้อบังคับการเช่า
+
+ข้อที่1. 	ผู้เช่าห้องจะไม่นำบุคคลอื่น นอกจากที่ระบุไว้ท้ายสัญญาเช่าเข้ามาอยู่อาศัย หรือเกี่ยวข้องในห้องพักหรือบริเวณอาคารที่เช่าโดยเด็ดขาด ห้องพักหนึ่งจะพักอยู่ได้ไม่เกิน 3 คน
+ข้อที่2. 	ห้ามผู้เช่าประกอบอาหาร หรือทำครัวในห้องพัก หรือในบริเวณอาคารโดยเด็ดขาด
+ข้อที่3. 	ห้ามนำสัตว์เลี้ยงทุกชนิดเข้ามาในห้องพัก หรือบริเวณอาคารที่เช่า ไม่ว่ากรณีใดๆทั้งสิ้น
+ข้อที่4. 	ห้ามติดเครื่องหมาย หรือสัญลักษณ์ใดๆ ทั้งภายในและภายนอกอาคารโดยเด็ดขาด
+ข้อที่5. 	ห้ามวางรองเท้า หรือสิ่งของไว้หน้าห้องพัก
+ข้อที่6. 	ห้ามกวาดฝุ่นผงออกมาหน้าห้องพัก
+ข้อที่7. 	การแจ้งย้ายผู้เช่าต้องเซ็นใบแจ้งย้ายภายในวันที่ 1-5 ของเดือน แต่มีกำหนดย้ายออกภายในวันที่ 30 ของเดือน ที่แจ้งย้ายนั้น (ห้ามขนย้ายเกิน 18.00 น.) หากเกินกำหนดผู้เช่ายินยอมให้ผู้ให้เช่าคิดค่าเช่าเพิ่มวันละ 500 บาท
+ข้อที่8. 	หากผู้เช่าเซ็นใบแจ้งย้ายภายหลังวันที่ 6 ของเดือนแต่ไม่เกินวันที่ 15 ของเดือน และต้องย้ายออกภายในวันที่ 30 ของเดือนที่แจ้งย้ายนั้น ผู้เช่าจะต้องชำระค่าเช่าล่วงหน้าของเดือนถัดไปในอัตราของค่าเช่าห้องพัก และหากเซ็นใบแจ้งย้ายหลังวันที่ 15 ของเดือนนั้นจะต้องชำระค่าเช่าห้องพักล่วงหน้าเต็มอัตราของเดือนถัดไป
+ข้อที่9. 	การขนย้ายทรัพย์สินเข้าหรือออกจากห้องพัก ผู้เช่าต้องกระทำในเวลากลางวัน และต้องแจ้งให้ผู้ให้เช่าทราบล่วงหน้าเพื่อให้ผู้ให้เช่ามาตรวจตราควบคุมดูแลการขนย้ายนั้นด้วย มิฉะนั้นผู้เช่ายินยอมชดใช้ค่าเสียหายแก่ผู้ให้เช่าจนครบ และห้ามทำการขนย้ายทรัพย์สินออกจากอาคารหลังเวลา 18.00 น. ยกเว้นได้รับอนุญาตจากผู้ให้เช่า
+ข้อที่10. ถ้าหากเกิดความเสียหายในห้องพัก เช่น ตอกตะปู, ติดกาว 2 หน้า, ก๊อกน้ำเสีย, ฝาชักโครกแตกหรืออื่นๆ ผู้เช่ายินยอมให้ผู้ให้เช่าคิดค่าเสียหายไม่ว่ากรณีใดๆทั้งสิ้น
+ข้อที่11. กรณีผู้เช่าส่งเสียงดังอันทำให้เกิดการรบกวนแก่ผู้อื่นหรือกระทำผิดต่อระเบียบข้อบังคับข้อใดข้อหนึ่ง ผู้ให้เช่ามีสิทธิ์บอกยกเลิกสัญญาเช่าได้ทันที
+ข้อที่12. การย้ายออกผู้เช่าต้องชำระ 1) ค่าทำความสะอาดห้องพักในอัตรา 200 บาท 2) ค่าเสื่อมห้องพักในอัตรา 300 	บาท (ไม่รวมความเสียหายที่เกิดขึ้นในห้องพัก เช่น ตอกตะปู, ติดกาว 2 หน้า หรืออื่นๆ ) 
+
+สัญญานี้ทำขึ้นเป็นสองฉบับ มีข้อความถูกต้องตรงกัน คู่สัญญาได้อ่านและเข้าใจข้อความในสัญญาโดยตลอดดีแล้ว จึงลงลายมือชื่อพร้อมทั้งประทับตรา (ถ้ามี) ไว้เป็นสำคัญต่อหน้าพยาน และเก็บไว้ฝ่ายละหนึ่งฉบับ
+	
+		(ลงนาม)........................................................... ผู้เช่า                (ลงนาม)...................................................... ผู้ให้เช่า
+
+		(.....................................................................)                        (...........................................................)
+
+		(ลงนาม)........................................................... พยาน               (ลงนาม)...................................................... พยาน
+
+		(.....................................................................)                        (............................................................)
+</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>(ซึ่งต่อไปนี้เรียกว่า “สถานที่”) และเป็นเจ้าของสิ่งติดตั้ง ตกแต่ง ตลอดจนอุปกรณ์เครื่องใช้ประจำห้องพัก (ต่อไปนี้รวมเรียกว่า “เครื่องใช้ประจำห้องพัก”) และโดยผู้เช่าตกลงเช่าและผู้ให้เช่าตกลงให้เช่าสถานที่และเครื่องใช้ประจำห้องพัก</value>
+  </data>
+  <data name="xrTableCellTopic1.Text" xml:space="preserve">
+    <value>ข้อที่1. ผู้ให้เช่าตกลงให้เช่า และผู้เช่าตกลงเช่าสถานที่ ห้องพักหมายเลข A101  โดยมีกำหนดระยะเวลาขั้นต่ำ 3 เดือน เริ่มตั้งแต่วันที่ [checkindate] ถึงวันที่ [rentminend] ตามอัตราค่าเช่าเดือนละ 3,000.00 บาท ( สามพันบาทถ้วน ) และค่าบริการอื่นๆ ตามใบแจ้งหนี้ในแต่ละเดือน</value>
+  </data>
+  <data name="xrTableCell30.Text" xml:space="preserve">
+    <value>ข้อที่2. ผู้เช่าให้สัญญาว่า
+	2.1 จะชำระค่าเช่ารายเดือนตามข้อ 1 และค่าบริการอื่นๆ ให้แก่ผู้ให้เช่าไม่ช้ากว่าวันที่ 5 ของทุกเดือน มิฉะนั้นผู้เช่ายินยอมให้ปรับวันละ 100 บาท (หนึ่งร้อยบาท) และหลังวันที่ 10 ของเดือนจะยอมให้ผู้ให้เช่างดบริการระบบสาธารณูปโภคทุกชนิดและยกเลิกสัญญาเช่าได้ทันที
+	2.2 จะใช้สถานที่ดังกล่าวเป็นที่ทำงานหรืออยู่อาศัยเท่านั้น
+	2.3 จะอนุญาตให้ผู้ให้เช่าหรือผู้แทนเข้าไปในสถานที่ เพื่อทำการซ่อมแซมในเวลากลางวันตามที่สมควร
+	2.4 จะไม่ทำลายหรือทำให้เสียหาย หรือเปลี่ยนแปลงต่อเติมสถานที่โดยปราศจากความยินยอมของผู้ให้ เช่าเป็นหนังสือเสียก่อน ทั้งนี้ผู้เช่ามีสิทธิรื้อถอนสิ่งติดตั้งและตกแต่งซึ่งไม่ถือว่าเป็นส่วนควบของสถานที่ ออกไปได้เมื่อสัญญาเช่าสิ้นสุด
+	2.5 จะปฏิบัติตามระเบียบข้อบังคับการเช่าทุกประการ</value>
+  </data>
+  <metadata name="TopMargin.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="BottomMargin.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

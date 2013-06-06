@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Detail.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TopMargin.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="BottomMargin.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTable3.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow10.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell1.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell52.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell53.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell54.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell58.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell7.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell10.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow1.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell5.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellRoomPrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableAmountOfdays.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPriceRoomRent.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellSumPrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellRoomVat.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellNetPrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow2.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell3.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellEMeter.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellEMeterUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPriceEPerUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellEPrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellEVat.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellENet.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow3.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell16.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellWMeter.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellWMeterUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPriceWPerUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellWPrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellWVat.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellWNet.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow4.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell23.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPhone.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPhoneUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPricePhonePerUnit.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPhonePrice.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPhoneVat.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellPhoneNet.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTable1.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow6.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell25.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell26.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellSubTotal.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow7.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell32.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellVatText.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellSumVat.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableRow8.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell39.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCell40.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTableCellGrandTotal.UserDesignerLocked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.DataSourceSchema" xml:space="preserve">
+    <value>&lt;?xml version="1.0"?&gt;
+&lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+  &lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+        &lt;xs:element name="Table1"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="order" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="item_name" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="item_priceperunit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="item_sumprice" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="item_vatprice" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="item_netprice" type="xs:double" minOccurs="0" /&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="getRecieptById"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="rec_trans_id" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_number" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_cutduedate" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_fixpaymentdate" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_datecreated" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_dateupdated" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_status" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_name" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_logofile" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_address" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_telephone" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_fax" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_email" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_website" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_tax_id" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_company_vision" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_tenantname" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_tenantaddress" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_roomlabel" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_building" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_floor" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_roomtype" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_previous_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_previous_energy" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_present_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_present_energy" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_unit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_priceperunit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_emeter_price" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_previous_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_previous_energy" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_present_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_present_energy" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_unit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_priceperunit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_wmeter_price" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_phone_start_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_phone_end_date" type="xs:dateTime" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_phonemeter_unit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_phonemeter_priceperunit" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_phone_price" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_sumprice" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_sumprice_withvat" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_sumprice_net" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_print_status" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_header_invoice" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_footer_invoice" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_under_invoice1" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_under_invoice2" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_dateformat" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_doc_logo_position" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_room_id" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_roomprice" type="xs:double" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_vattype" type="xs:int" minOccurs="0" /&gt;
+              &lt;xs:element name="inv_trans_number" type="xs:string" minOccurs="0" /&gt;
+              &lt;xs:element name="rec_trans_money_text" type="xs:string" minOccurs="0" /&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:choice&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+</root>

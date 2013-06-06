@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="DXWindowsApplication2.Properties.Settings.sxbillingConnectionString"
+            connectionString="Data Source=NEOSIGN-NB;Initial Catalog=sxbilling;Persist Security Info=True;User ID=sa;Password=111111"
+            providerName="System.Data.SqlClient" />
+        <add name="DXWindowsApplication2.Properties.Settings.ClientsxbillingConnectionString"
+            connectionString="Data Source=|DataDirectory|\sxbilling.sdf;Max Database Size=2047"
+            providerName="Microsoft.SqlServerCe.Client.3.5" />
+        <add name="DXWindowsApplication2.Properties.Settings.sxbillingConnectionString1"
+            connectionString="Data Source=RS37-NONTAKORN\SQLEXPRESS;Initial Catalog=sxbilling;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>

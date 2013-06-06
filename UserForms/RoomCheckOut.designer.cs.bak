@@ -1,0 +1,939 @@
+﻿namespace DXWindowsApplication2.UserForms
+{
+    partial class RoomCheckOut
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.textEditInvRecieptWaterLastestDate = new DevExpress.XtraEditors.TextEdit();
+            this.textEditInvRecieptWaterLastestprice = new DevExpress.XtraEditors.TextEdit();
+            this.textEditInvRecieptElectriclastestDate = new DevExpress.XtraEditors.TextEdit();
+            this.textEditInvRecieptElectricLastestprice = new DevExpress.XtraEditors.TextEdit();
+            this.textEditTransactionCheckOutCreate = new DevExpress.XtraEditors.TextEdit();
+            this.bttRemoveItem = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.bttAddItem = new DevExpress.XtraEditors.SimpleButton();
+            this.textEditCheckInId = new DevExpress.XtraEditors.TextEdit();
+            this.textEditTenantId = new DevExpress.XtraEditors.TextEdit();
+            this.textEditRoomId = new DevExpress.XtraEditors.TextEdit();
+            this.bttPrint = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cost_item = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cost_price = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cost_enable_edit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.textEditLeaveDate = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.bttCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.bttSave = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.textEditTenantName = new DevExpress.XtraEditors.TextEdit();
+            this.textEditRoomCode = new DevExpress.XtraEditors.TextEdit();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.check_out_room_code = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_room_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_roomtype_label = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_floor_code = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_building_label = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_tenant_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_tenant_surname = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_room_status = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_leave_date = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_room_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_tenant_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_check_in_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_insurerate_rate_monthly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_insurerate_rate_weekly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_insurerate_rate_daily = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_deposite_rate_monthly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_deposite_rate_weekly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.check_out_deposite_rate_daily = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.electricity_unit_rate_monthly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.electricity_unit_rate_weekly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.electricity_unit_rate_daily = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.electricity_unit_rate_min = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.electricity_price_rate_min = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.water_unit_rate_monthly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.water_unit_rate_weekly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.water_unit_rate_daily = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.water_unit_rate_min = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.water_price_rate_min = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            RoomCheckOut.textEditInsurerate = new DevExpress.XtraEditors.TextEdit();
+            RoomCheckOut.textEditDeposit = new DevExpress.XtraEditors.TextEdit();
+            RoomCheckOut.textEditRefund = new DevExpress.XtraEditors.TextEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
+            this.xtraScrollableControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptWaterLastestDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptWaterLastestprice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptElectriclastestDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptElectricLastestprice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTransactionCheckOutCreate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditCheckInId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTenantId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRoomId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditLeaveDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTenantName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRoomCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+            this.splitContainerControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditInsurerate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditDeposit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditRefund.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(1030, 524);
+            this.splitContainerControl1.SplitterPosition = 585;
+            this.splitContainerControl1.TabIndex = 0;
+            this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Controls.Add(RoomCheckOut.textEditRefund);
+            this.xtraScrollableControl1.Controls.Add(RoomCheckOut.textEditDeposit);
+            this.xtraScrollableControl1.Controls.Add(RoomCheckOut.textEditInsurerate);
+            this.xtraScrollableControl1.Controls.Add(this.textEditInvRecieptWaterLastestDate);
+            this.xtraScrollableControl1.Controls.Add(this.textEditInvRecieptWaterLastestprice);
+            this.xtraScrollableControl1.Controls.Add(this.textEditInvRecieptElectriclastestDate);
+            this.xtraScrollableControl1.Controls.Add(this.textEditInvRecieptElectricLastestprice);
+            this.xtraScrollableControl1.Controls.Add(this.textEditTransactionCheckOutCreate);
+            this.xtraScrollableControl1.Controls.Add(this.bttRemoveItem);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl7);
+            this.xtraScrollableControl1.Controls.Add(this.bttAddItem);
+            this.xtraScrollableControl1.Controls.Add(this.textEditCheckInId);
+            this.xtraScrollableControl1.Controls.Add(this.textEditTenantId);
+            this.xtraScrollableControl1.Controls.Add(this.textEditRoomId);
+            this.xtraScrollableControl1.Controls.Add(this.bttPrint);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl6);
+            this.xtraScrollableControl1.Controls.Add(this.gridControl2);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl3);
+            this.xtraScrollableControl1.Controls.Add(this.textEditLeaveDate);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl2);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl1);
+            this.xtraScrollableControl1.Controls.Add(this.bttCancel);
+            this.xtraScrollableControl1.Controls.Add(this.bttSave);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl4);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl5);
+            this.xtraScrollableControl1.Controls.Add(this.textEditTenantName);
+            this.xtraScrollableControl1.Controls.Add(this.textEditRoomCode);
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(2, 22);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(473, 474);
+            this.xtraScrollableControl1.TabIndex = 0;
+            // 
+            // textEditInvRecieptWaterLastestDate
+            // 
+            this.textEditInvRecieptWaterLastestDate.EditValue = "";
+            this.textEditInvRecieptWaterLastestDate.Enabled = false;
+            this.textEditInvRecieptWaterLastestDate.Location = new System.Drawing.Point(412, 16);
+            this.textEditInvRecieptWaterLastestDate.Name = "textEditInvRecieptWaterLastestDate";
+            this.textEditInvRecieptWaterLastestDate.Size = new System.Drawing.Size(17, 20);
+            this.textEditInvRecieptWaterLastestDate.TabIndex = 54;
+            this.textEditInvRecieptWaterLastestDate.Visible = false;
+            // 
+            // textEditInvRecieptWaterLastestprice
+            // 
+            this.textEditInvRecieptWaterLastestprice.EditValue = "";
+            this.textEditInvRecieptWaterLastestprice.Enabled = false;
+            this.textEditInvRecieptWaterLastestprice.Location = new System.Drawing.Point(389, 16);
+            this.textEditInvRecieptWaterLastestprice.Name = "textEditInvRecieptWaterLastestprice";
+            this.textEditInvRecieptWaterLastestprice.Size = new System.Drawing.Size(17, 20);
+            this.textEditInvRecieptWaterLastestprice.TabIndex = 53;
+            this.textEditInvRecieptWaterLastestprice.Visible = false;
+            // 
+            // textEditInvRecieptElectriclastestDate
+            // 
+            this.textEditInvRecieptElectriclastestDate.EditValue = "";
+            this.textEditInvRecieptElectriclastestDate.Enabled = false;
+            this.textEditInvRecieptElectriclastestDate.Location = new System.Drawing.Point(366, 16);
+            this.textEditInvRecieptElectriclastestDate.Name = "textEditInvRecieptElectriclastestDate";
+            this.textEditInvRecieptElectriclastestDate.Size = new System.Drawing.Size(17, 20);
+            this.textEditInvRecieptElectriclastestDate.TabIndex = 52;
+            this.textEditInvRecieptElectriclastestDate.Visible = false;
+            // 
+            // textEditInvRecieptElectricLastestprice
+            // 
+            this.textEditInvRecieptElectricLastestprice.EditValue = "";
+            this.textEditInvRecieptElectricLastestprice.Enabled = false;
+            this.textEditInvRecieptElectricLastestprice.Location = new System.Drawing.Point(343, 16);
+            this.textEditInvRecieptElectricLastestprice.Name = "textEditInvRecieptElectricLastestprice";
+            this.textEditInvRecieptElectricLastestprice.Size = new System.Drawing.Size(17, 20);
+            this.textEditInvRecieptElectricLastestprice.TabIndex = 51;
+            this.textEditInvRecieptElectricLastestprice.Visible = false;
+            // 
+            // textEditTransactionCheckOutCreate
+            // 
+            this.textEditTransactionCheckOutCreate.EditValue = "";
+            this.textEditTransactionCheckOutCreate.Enabled = false;
+            this.textEditTransactionCheckOutCreate.Location = new System.Drawing.Point(320, 16);
+            this.textEditTransactionCheckOutCreate.Name = "textEditTransactionCheckOutCreate";
+            this.textEditTransactionCheckOutCreate.Size = new System.Drawing.Size(17, 20);
+            this.textEditTransactionCheckOutCreate.TabIndex = 50;
+            this.textEditTransactionCheckOutCreate.Visible = false;
+            // 
+            // bttRemoveItem
+            // 
+            this.bttRemoveItem.Location = new System.Drawing.Point(135, 314);
+            this.bttRemoveItem.Name = "bttRemoveItem";
+            this.bttRemoveItem.Size = new System.Drawing.Size(89, 25);
+            this.bttRemoveItem.TabIndex = 49;
+            this.bttRemoveItem.Text = "ลบค่าใช้จ่าย";
+            this.bttRemoveItem.Click += new System.EventHandler(this.bttRemoveItem_Click);
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(10, 112);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(117, 13);
+            this.labelControl7.TabIndex = 47;
+            this.labelControl7.Text = "จำนวนเงินค่าเช่าล่วงหน้า :";
+            // 
+            // bttAddItem
+            // 
+            this.bttAddItem.Location = new System.Drawing.Point(33, 314);
+            this.bttAddItem.Name = "bttAddItem";
+            this.bttAddItem.Size = new System.Drawing.Size(89, 25);
+            this.bttAddItem.TabIndex = 46;
+            this.bttAddItem.Text = "เพิ่มค่าใช้จ่าย";
+            this.bttAddItem.Click += new System.EventHandler(this.bttAddItem_Click);
+            // 
+            // textEditCheckInId
+            // 
+            this.textEditCheckInId.EditValue = "";
+            this.textEditCheckInId.Enabled = false;
+            this.textEditCheckInId.Location = new System.Drawing.Point(297, 16);
+            this.textEditCheckInId.Name = "textEditCheckInId";
+            this.textEditCheckInId.Size = new System.Drawing.Size(17, 20);
+            this.textEditCheckInId.TabIndex = 45;
+            this.textEditCheckInId.Visible = false;
+            // 
+            // textEditTenantId
+            // 
+            this.textEditTenantId.EditValue = "";
+            this.textEditTenantId.Enabled = false;
+            this.textEditTenantId.Location = new System.Drawing.Point(254, 16);
+            this.textEditTenantId.Name = "textEditTenantId";
+            this.textEditTenantId.Size = new System.Drawing.Size(16, 20);
+            this.textEditTenantId.TabIndex = 44;
+            this.textEditTenantId.Visible = false;
+            // 
+            // textEditRoomId
+            // 
+            this.textEditRoomId.EditValue = "";
+            this.textEditRoomId.Enabled = false;
+            this.textEditRoomId.Location = new System.Drawing.Point(276, 16);
+            this.textEditRoomId.Name = "textEditRoomId";
+            this.textEditRoomId.Size = new System.Drawing.Size(15, 20);
+            this.textEditRoomId.TabIndex = 43;
+            this.textEditRoomId.Visible = false;
+            // 
+            // bttPrint
+            // 
+            this.bttPrint.Location = new System.Drawing.Point(24, 410);
+            this.bttPrint.Name = "bttPrint";
+            this.bttPrint.Size = new System.Drawing.Size(121, 35);
+            this.bttPrint.TabIndex = 42;
+            this.bttPrint.Text = "พิมพ์ใบคืนเงินประกัน";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(32, 369);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(60, 13);
+            this.labelControl6.TabIndex = 41;
+            this.labelControl6.Text = "จำนวนเงินคืน";
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Location = new System.Drawing.Point(33, 198);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(419, 107);
+            this.gridControl2.TabIndex = 40;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.cost_item,
+            this.cost_price,
+            this.cost_enable_edit});
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView2.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView2.OptionsFind.AllowFindPanel = false;
+            this.gridView2.OptionsFind.ClearFindOnClose = false;
+            this.gridView2.OptionsFind.ShowCloseButton = false;
+            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // cost_item
+            // 
+            this.cost_item.Caption = "รายการค่าใช้จ่ายเพิ่มเติม";
+            this.cost_item.FieldName = "item";
+            this.cost_item.Name = "cost_item";
+            this.cost_item.OptionsColumn.AllowEdit = false;
+            this.cost_item.OptionsColumn.AllowFocus = false;
+            this.cost_item.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.cost_item.OptionsColumn.AllowMove = false;
+            this.cost_item.Visible = true;
+            this.cost_item.VisibleIndex = 0;
+            // 
+            // cost_price
+            // 
+            this.cost_price.Caption = "จำนวนเงิน";
+            this.cost_price.FieldName = "price";
+            this.cost_price.Name = "cost_price";
+            this.cost_price.OptionsColumn.AllowEdit = false;
+            this.cost_price.OptionsColumn.AllowFocus = false;
+            this.cost_price.OptionsColumn.AllowMove = false;
+            this.cost_price.OptionsColumn.AllowShowHide = false;
+            this.cost_price.Visible = true;
+            this.cost_price.VisibleIndex = 1;
+            // 
+            // cost_enable_edit
+            // 
+            this.cost_enable_edit.Caption = "สถานะ";
+            this.cost_enable_edit.FieldName = "enable_edit";
+            this.cost_enable_edit.Name = "cost_enable_edit";
+            this.cost_enable_edit.OptionsColumn.AllowFocus = false;
+            this.cost_enable_edit.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.cost_enable_edit.OptionsColumn.AllowMove = false;
+            this.cost_enable_edit.Visible = true;
+            this.cost_enable_edit.VisibleIndex = 2;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(33, 179);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(55, 13);
+            this.labelControl3.TabIndex = 26;
+            this.labelControl3.Text = "หักค่าใช้จ่าย";
+            // 
+            // textEditLeaveDate
+            // 
+            this.textEditLeaveDate.EditValue = new System.DateTime(2011, 6, 19, 23, 19, 44, 343);
+            this.textEditLeaveDate.Enabled = false;
+            this.textEditLeaveDate.Location = new System.Drawing.Point(135, 142);
+            this.textEditLeaveDate.Name = "textEditLeaveDate";
+            this.textEditLeaveDate.Size = new System.Drawing.Size(317, 20);
+            this.textEditLeaveDate.TabIndex = 25;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(62, 145);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(65, 13);
+            this.labelControl2.TabIndex = 24;
+            this.labelControl2.Text = "วันที่ย้ายออก :";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(24, 79);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(103, 13);
+            this.labelControl1.TabIndex = 22;
+            this.labelControl1.Text = "จำนวนเงินประกันห้อง :";
+            // 
+            // bttCancel
+            // 
+            this.bttCancel.Location = new System.Drawing.Point(354, 410);
+            this.bttCancel.Name = "bttCancel";
+            this.bttCancel.Size = new System.Drawing.Size(89, 35);
+            this.bttCancel.TabIndex = 21;
+            this.bttCancel.Text = "ยกเลิก";
+            // 
+            // bttSave
+            // 
+            this.bttSave.Location = new System.Drawing.Point(245, 410);
+            this.bttSave.Name = "bttSave";
+            this.bttSave.Size = new System.Drawing.Size(89, 35);
+            this.bttSave.TabIndex = 17;
+            this.bttSave.Text = "ย้ายออก";
+            this.bttSave.Click += new System.EventHandler(this.bttSave_Click);
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(58, 19);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(69, 13);
+            this.labelControl4.TabIndex = 20;
+            this.labelControl4.Text = "หมายเลขห้อง :";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(83, 49);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(44, 13);
+            this.labelControl5.TabIndex = 15;
+            this.labelControl5.Text = "ชื่อผู้เช่า :";
+            // 
+            // textEditTenantName
+            // 
+            this.textEditTenantName.EditValue = "";
+            this.textEditTenantName.Enabled = false;
+            this.textEditTenantName.Location = new System.Drawing.Point(135, 46);
+            this.textEditTenantName.Name = "textEditTenantName";
+            this.textEditTenantName.Size = new System.Drawing.Size(317, 20);
+            this.textEditTenantName.TabIndex = 19;
+            // 
+            // textEditRoomCode
+            // 
+            this.textEditRoomCode.EditValue = "";
+            this.textEditRoomCode.Enabled = false;
+            this.textEditRoomCode.Location = new System.Drawing.Point(135, 16);
+            this.textEditRoomCode.Name = "textEditRoomCode";
+            this.textEditRoomCode.Size = new System.Drawing.Size(95, 20);
+            this.textEditRoomCode.TabIndex = 18;
+            // 
+            // splitContainerControl2
+            // 
+            this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.groupControl3);
+            this.splitContainerControl2.Panel1.Text = "Panel1";
+            this.splitContainerControl2.Panel2.Controls.Add(this.panelControl3);
+            this.splitContainerControl2.Panel2.Controls.Add(this.panelControl1);
+            this.splitContainerControl2.Panel2.Text = "Panel2";
+            this.splitContainerControl2.Size = new System.Drawing.Size(1030, 524);
+            this.splitContainerControl2.SplitterPosition = 548;
+            this.splitContainerControl2.TabIndex = 17;
+            this.splitContainerControl2.Text = "splitContainerControl2";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.groupControl3.AppearanceCaption.Options.UseFont = true;
+            this.groupControl3.Controls.Add(this.gridControl1);
+            this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl3.Location = new System.Drawing.Point(0, 0);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(548, 524);
+            this.groupControl3.TabIndex = 0;
+            this.groupControl3.Text = "รายการห้องที่แจ้งย้ายออก";
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(2, 22);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(544, 500);
+            this.gridControl1.TabIndex = 1;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.check_out_room_code,
+            this.check_out_room_name,
+            this.check_out_roomtype_label,
+            this.check_out_floor_code,
+            this.check_out_building_label,
+            this.check_out_tenant_name,
+            this.check_out_tenant_surname,
+            this.check_out_room_status,
+            this.check_out_leave_date,
+            this.check_out_room_id,
+            this.check_out_tenant_id,
+            this.check_out_check_in_id,
+            this.check_out_insurerate_rate_monthly,
+            this.check_out_insurerate_rate_weekly,
+            this.check_out_insurerate_rate_daily,
+            this.check_out_deposite_rate_monthly,
+            this.check_out_deposite_rate_weekly,
+            this.check_out_deposite_rate_daily,
+            this.electricity_unit_rate_monthly,
+            this.electricity_unit_rate_weekly,
+            this.electricity_unit_rate_daily,
+            this.electricity_unit_rate_min,
+            this.electricity_price_rate_min,
+            this.water_unit_rate_monthly,
+            this.water_unit_rate_weekly,
+            this.water_unit_rate_daily,
+            this.water_unit_rate_min,
+            this.water_price_rate_min});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.ShowCloseButton = false;
+            this.gridView1.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            // 
+            // check_out_room_code
+            // 
+            this.check_out_room_code.Caption = "รหัสห้อง";
+            this.check_out_room_code.FieldName = "coderef";
+            this.check_out_room_code.Name = "check_out_room_code";
+            this.check_out_room_code.OptionsColumn.AllowEdit = false;
+            this.check_out_room_code.OptionsColumn.AllowFocus = false;
+            this.check_out_room_code.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_room_code.OptionsColumn.AllowMove = false;
+            this.check_out_room_code.Visible = true;
+            this.check_out_room_code.VisibleIndex = 0;
+            // 
+            // check_out_room_name
+            // 
+            this.check_out_room_name.Caption = "ชื่อห้อง";
+            this.check_out_room_name.FieldName = "room_label";
+            this.check_out_room_name.Name = "check_out_room_name";
+            this.check_out_room_name.OptionsColumn.AllowEdit = false;
+            this.check_out_room_name.OptionsColumn.AllowFocus = false;
+            this.check_out_room_name.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.True;
+            this.check_out_room_name.OptionsColumn.AllowMove = false;
+            this.check_out_room_name.Visible = true;
+            this.check_out_room_name.VisibleIndex = 1;
+            // 
+            // check_out_roomtype_label
+            // 
+            this.check_out_roomtype_label.Caption = "ประเภทห้อง";
+            this.check_out_roomtype_label.FieldName = "roomtype_label";
+            this.check_out_roomtype_label.Name = "check_out_roomtype_label";
+            this.check_out_roomtype_label.OptionsColumn.AllowEdit = false;
+            this.check_out_roomtype_label.OptionsColumn.AllowFocus = false;
+            this.check_out_roomtype_label.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_roomtype_label.OptionsColumn.AllowMove = false;
+            this.check_out_roomtype_label.Visible = true;
+            this.check_out_roomtype_label.VisibleIndex = 2;
+            // 
+            // check_out_floor_code
+            // 
+            this.check_out_floor_code.Caption = "ชั้น";
+            this.check_out_floor_code.FieldName = "floor_code";
+            this.check_out_floor_code.Name = "check_out_floor_code";
+            this.check_out_floor_code.OptionsColumn.AllowEdit = false;
+            this.check_out_floor_code.OptionsColumn.AllowFocus = false;
+            this.check_out_floor_code.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_floor_code.OptionsColumn.AllowMove = false;
+            this.check_out_floor_code.Visible = true;
+            this.check_out_floor_code.VisibleIndex = 3;
+            // 
+            // check_out_building_label
+            // 
+            this.check_out_building_label.Caption = "ชื่ออาคาร";
+            this.check_out_building_label.FieldName = "building_label";
+            this.check_out_building_label.Name = "check_out_building_label";
+            this.check_out_building_label.OptionsColumn.AllowEdit = false;
+            this.check_out_building_label.OptionsColumn.AllowFocus = false;
+            this.check_out_building_label.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_building_label.OptionsColumn.AllowMove = false;
+            this.check_out_building_label.Visible = true;
+            this.check_out_building_label.VisibleIndex = 4;
+            // 
+            // check_out_tenant_name
+            // 
+            this.check_out_tenant_name.Caption = "ชื่อ";
+            this.check_out_tenant_name.FieldName = "tenant_name";
+            this.check_out_tenant_name.Name = "check_out_tenant_name";
+            this.check_out_tenant_name.OptionsColumn.AllowEdit = false;
+            this.check_out_tenant_name.OptionsColumn.AllowFocus = false;
+            this.check_out_tenant_name.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_tenant_name.OptionsColumn.AllowMove = false;
+            this.check_out_tenant_name.Visible = true;
+            this.check_out_tenant_name.VisibleIndex = 5;
+            // 
+            // check_out_tenant_surname
+            // 
+            this.check_out_tenant_surname.Caption = "นามสกุล";
+            this.check_out_tenant_surname.FieldName = "tenant_surname";
+            this.check_out_tenant_surname.Name = "check_out_tenant_surname";
+            this.check_out_tenant_surname.OptionsColumn.AllowEdit = false;
+            this.check_out_tenant_surname.OptionsColumn.AllowFocus = false;
+            this.check_out_tenant_surname.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_tenant_surname.OptionsColumn.AllowMove = false;
+            this.check_out_tenant_surname.Visible = true;
+            this.check_out_tenant_surname.VisibleIndex = 6;
+            // 
+            // check_out_room_status
+            // 
+            this.check_out_room_status.Caption = "สถานะห้อง";
+            this.check_out_room_status.FieldName = "room_status_label";
+            this.check_out_room_status.Name = "check_out_room_status";
+            this.check_out_room_status.OptionsColumn.AllowEdit = false;
+            this.check_out_room_status.OptionsColumn.AllowFocus = false;
+            this.check_out_room_status.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_room_status.OptionsColumn.AllowMove = false;
+            this.check_out_room_status.Visible = true;
+            this.check_out_room_status.VisibleIndex = 7;
+            // 
+            // check_out_leave_date
+            // 
+            this.check_out_leave_date.Caption = "วันที่ย้ายออก";
+            this.check_out_leave_date.FieldName = "leave_date";
+            this.check_out_leave_date.Name = "check_out_leave_date";
+            this.check_out_leave_date.OptionsColumn.AllowEdit = false;
+            this.check_out_leave_date.OptionsColumn.AllowFocus = false;
+            this.check_out_leave_date.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            this.check_out_leave_date.OptionsColumn.AllowMove = false;
+            this.check_out_leave_date.Visible = true;
+            this.check_out_leave_date.VisibleIndex = 8;
+            // 
+            // check_out_room_id
+            // 
+            this.check_out_room_id.Caption = "room_id";
+            this.check_out_room_id.FieldName = "room_id";
+            this.check_out_room_id.Name = "check_out_room_id";
+            // 
+            // check_out_tenant_id
+            // 
+            this.check_out_tenant_id.Caption = "tenant_id";
+            this.check_out_tenant_id.FieldName = "tenant_id";
+            this.check_out_tenant_id.Name = "check_out_tenant_id";
+            // 
+            // check_out_check_in_id
+            // 
+            this.check_out_check_in_id.Caption = "check_in_id";
+            this.check_out_check_in_id.FieldName = "check_in_id";
+            this.check_out_check_in_id.Name = "check_out_check_in_id";
+            // 
+            // check_out_insurerate_rate_monthly
+            // 
+            this.check_out_insurerate_rate_monthly.Caption = "insurerate_rate_monthly";
+            this.check_out_insurerate_rate_monthly.FieldName = "insurerate_rate_monthly";
+            this.check_out_insurerate_rate_monthly.Name = "check_out_insurerate_rate_monthly";
+            // 
+            // check_out_insurerate_rate_weekly
+            // 
+            this.check_out_insurerate_rate_weekly.Caption = "check_out_insurerate_rate_weekly";
+            this.check_out_insurerate_rate_weekly.FieldName = "insurerate_rate_weekly";
+            this.check_out_insurerate_rate_weekly.Name = "check_out_insurerate_rate_weekly";
+            // 
+            // check_out_insurerate_rate_daily
+            // 
+            this.check_out_insurerate_rate_daily.Caption = "check_out_insurerate_rate_daily";
+            this.check_out_insurerate_rate_daily.FieldName = "insurerate_rate_daily";
+            this.check_out_insurerate_rate_daily.Name = "check_out_insurerate_rate_daily";
+            // 
+            // check_out_deposite_rate_monthly
+            // 
+            this.check_out_deposite_rate_monthly.Caption = "check_out_deposite_rate_monthly";
+            this.check_out_deposite_rate_monthly.FieldName = "deposite_rate_monthly";
+            this.check_out_deposite_rate_monthly.Name = "check_out_deposite_rate_monthly";
+            // 
+            // check_out_deposite_rate_weekly
+            // 
+            this.check_out_deposite_rate_weekly.Caption = "check_out_deposite_rate_weekly";
+            this.check_out_deposite_rate_weekly.FieldName = "deposite_rate_weekly";
+            this.check_out_deposite_rate_weekly.Name = "check_out_deposite_rate_weekly";
+            // 
+            // check_out_deposite_rate_daily
+            // 
+            this.check_out_deposite_rate_daily.Caption = "check_out_deposite_rate_daily";
+            this.check_out_deposite_rate_daily.FieldName = "deposite_rate_daily";
+            this.check_out_deposite_rate_daily.Name = "check_out_deposite_rate_daily";
+            // 
+            // electricity_unit_rate_monthly
+            // 
+            this.electricity_unit_rate_monthly.Caption = "electricity_unit_rate_monthly";
+            this.electricity_unit_rate_monthly.FieldName = "electricity_unit_rate_monthly";
+            this.electricity_unit_rate_monthly.Name = "electricity_unit_rate_monthly";
+            // 
+            // electricity_unit_rate_weekly
+            // 
+            this.electricity_unit_rate_weekly.Caption = "electricity_unit_rate_weekly";
+            this.electricity_unit_rate_weekly.FieldName = "electricity_unit_rate_weekly";
+            this.electricity_unit_rate_weekly.Name = "electricity_unit_rate_weekly";
+            // 
+            // electricity_unit_rate_daily
+            // 
+            this.electricity_unit_rate_daily.Caption = "electricity_unit_rate_daily";
+            this.electricity_unit_rate_daily.FieldName = "electricity_unit_rate_daily";
+            this.electricity_unit_rate_daily.Name = "electricity_unit_rate_daily";
+            // 
+            // electricity_unit_rate_min
+            // 
+            this.electricity_unit_rate_min.Caption = "electricity_unit_rate_min";
+            this.electricity_unit_rate_min.FieldName = "electricity_unit_rate_min";
+            this.electricity_unit_rate_min.Name = "electricity_unit_rate_min";
+            // 
+            // electricity_price_rate_min
+            // 
+            this.electricity_price_rate_min.Caption = "electricity_price_rate_min";
+            this.electricity_price_rate_min.FieldName = "electricity_price_rate_min";
+            this.electricity_price_rate_min.Name = "electricity_price_rate_min";
+            // 
+            // water_unit_rate_monthly
+            // 
+            this.water_unit_rate_monthly.Caption = "water_unit_rate_monthly";
+            this.water_unit_rate_monthly.FieldName = "water_unit_rate_monthly";
+            this.water_unit_rate_monthly.Name = "water_unit_rate_monthly";
+            // 
+            // water_unit_rate_weekly
+            // 
+            this.water_unit_rate_weekly.Caption = "water_unit_rate_weekly";
+            this.water_unit_rate_weekly.FieldName = "water_unit_rate_weekly";
+            this.water_unit_rate_weekly.Name = "water_unit_rate_weekly";
+            // 
+            // water_unit_rate_daily
+            // 
+            this.water_unit_rate_daily.Caption = "water_unit_rate_daily";
+            this.water_unit_rate_daily.FieldName = "water_unit_rate_daily";
+            this.water_unit_rate_daily.Name = "water_unit_rate_daily";
+            // 
+            // water_unit_rate_min
+            // 
+            this.water_unit_rate_min.Caption = "water_unit_rate_min";
+            this.water_unit_rate_min.FieldName = "water_unit_rate_min";
+            this.water_unit_rate_min.Name = "water_unit_rate_min";
+            // 
+            // water_price_rate_min
+            // 
+            this.water_price_rate_min.Caption = "water_price_rate_min";
+            this.water_price_rate_min.FieldName = "water_price_rate_min";
+            this.water_price_rate_min.Name = "water_price_rate_min";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl3.Controls.Add(this.groupControl1);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl3.Location = new System.Drawing.Point(0, 0);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(477, 498);
+            this.panelControl3.TabIndex = 12;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.xtraScrollableControl1);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(477, 498);
+            this.groupControl1.TabIndex = 3;
+            this.groupControl1.Text = "ย้ายผู้เช่าออกจากห้อง";
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.DarkGray;
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl1.Location = new System.Drawing.Point(0, 498);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(477, 26);
+            this.panelControl1.TabIndex = 11;
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelControl2.Appearance.Options.UseBackColor = true;
+            this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl2.Controls.Add(this.splitContainerControl1);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(1030, 524);
+            this.panelControl2.TabIndex = 16;
+            // 
+            // textEditInsurerate
+            // 
+            RoomCheckOut.textEditInsurerate.EditValue = "";
+            RoomCheckOut.textEditInsurerate.Enabled = false;
+            RoomCheckOut.textEditInsurerate.Location = new System.Drawing.Point(135, 76);
+            RoomCheckOut.textEditInsurerate.Name = "textEditInsurerate";
+            RoomCheckOut.textEditInsurerate.Size = new System.Drawing.Size(95, 20);
+            RoomCheckOut.textEditInsurerate.TabIndex = 55;
+            // 
+            // textEditDeposit
+            // 
+            RoomCheckOut.textEditDeposit.EditValue = "";
+            RoomCheckOut.textEditDeposit.Enabled = false;
+            RoomCheckOut.textEditDeposit.Location = new System.Drawing.Point(135, 109);
+            RoomCheckOut.textEditDeposit.Name = "textEditDeposit";
+            RoomCheckOut.textEditDeposit.Size = new System.Drawing.Size(95, 20);
+            RoomCheckOut.textEditDeposit.TabIndex = 56;
+            // 
+            // textEditRefund
+            // 
+            RoomCheckOut.textEditRefund.EditValue = "";
+            RoomCheckOut.textEditRefund.Enabled = false;
+            RoomCheckOut.textEditRefund.Location = new System.Drawing.Point(110, 366);
+            RoomCheckOut.textEditRefund.Name = "textEditRefund";
+            RoomCheckOut.textEditRefund.Size = new System.Drawing.Size(95, 20);
+            RoomCheckOut.textEditRefund.TabIndex = 57;
+            // 
+            // RoomCheckOut
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.splitContainerControl2);
+            this.Controls.Add(this.panelControl2);
+            this.Name = "RoomCheckOut";
+            this.Size = new System.Drawing.Size(1030, 524);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
+            this.xtraScrollableControl1.ResumeLayout(false);
+            this.xtraScrollableControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptWaterLastestDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptWaterLastestprice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptElectriclastestDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInvRecieptElectricLastestprice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTransactionCheckOutCreate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditCheckInId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTenantId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRoomId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditLeaveDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTenantName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRoomCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+            this.splitContainerControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditInsurerate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditDeposit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(RoomCheckOut.textEditRefund.Properties)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private DevExpress.XtraEditors.SimpleButton bttCancel;
+        private DevExpress.XtraEditors.SimpleButton bttSave;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.TextEdit textEditTenantName;
+        private DevExpress.XtraEditors.TextEdit textEditRoomCode;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.TextEdit textEditLeaveDate;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.SimpleButton bttPrint;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_room_code;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_room_name;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_roomtype_label;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_floor_code;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_building_label;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_tenant_name;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_tenant_surname;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_room_status;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_leave_date;
+        private DevExpress.XtraEditors.TextEdit textEditTenantId;
+        private DevExpress.XtraEditors.TextEdit textEditRoomId;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_room_id;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_tenant_id;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_check_in_id;
+        private DevExpress.XtraEditors.TextEdit textEditCheckInId;
+        private DevExpress.XtraEditors.SimpleButton bttAddItem;
+        private DevExpress.XtraGrid.Columns.GridColumn cost_item;
+        private DevExpress.XtraGrid.Columns.GridColumn cost_price;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_insurerate_rate_monthly;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_insurerate_rate_weekly;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_insurerate_rate_daily;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_deposite_rate_monthly;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_deposite_rate_weekly;
+        private DevExpress.XtraGrid.Columns.GridColumn check_out_deposite_rate_daily;
+        private DevExpress.XtraEditors.SimpleButton bttRemoveItem;
+        private DevExpress.XtraGrid.Columns.GridColumn electricity_unit_rate_monthly;
+        private DevExpress.XtraGrid.Columns.GridColumn electricity_unit_rate_weekly;
+        private DevExpress.XtraGrid.Columns.GridColumn electricity_unit_rate_daily;
+        private DevExpress.XtraGrid.Columns.GridColumn electricity_unit_rate_min;
+        private DevExpress.XtraGrid.Columns.GridColumn electricity_price_rate_min;
+        private DevExpress.XtraGrid.Columns.GridColumn water_unit_rate_monthly;
+        private DevExpress.XtraGrid.Columns.GridColumn water_unit_rate_weekly;
+        private DevExpress.XtraGrid.Columns.GridColumn water_unit_rate_daily;
+        private DevExpress.XtraGrid.Columns.GridColumn water_unit_rate_min;
+        private DevExpress.XtraGrid.Columns.GridColumn water_price_rate_min;
+        private DevExpress.XtraEditors.TextEdit textEditTransactionCheckOutCreate;
+        private DevExpress.XtraEditors.TextEdit textEditInvRecieptWaterLastestDate;
+        private DevExpress.XtraEditors.TextEdit textEditInvRecieptWaterLastestprice;
+        private DevExpress.XtraEditors.TextEdit textEditInvRecieptElectriclastestDate;
+        private DevExpress.XtraEditors.TextEdit textEditInvRecieptElectricLastestprice;
+        private DevExpress.XtraGrid.Columns.GridColumn cost_enable_edit;
+        public static DevExpress.XtraEditors.TextEdit textEditRefund;
+        public static DevExpress.XtraEditors.TextEdit textEditDeposit;
+        public static DevExpress.XtraEditors.TextEdit textEditInsurerate;
+        
+    }
+}
